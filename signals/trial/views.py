@@ -9,12 +9,12 @@ try:
         print("User created inside the transaction")
 
         data = Data.objects.get(user=user)
-        print(f"Profile created by signal: {Data.background}")
+        print(f"data created by signal: {data.background}")
 
         raise Exception("Rolling back the transaction!")
     
 except Exception as e:
     print(e)   
 
-profile_exists = Data.objects.filter(user__username="testuser").exists()
-print(f"Profile exists after rollback: {profile_exists}")    
+data_exists = Data.objects.filter(user__username="testuser").exists()
+print(f"data exists after rollback: {data_exists}")    

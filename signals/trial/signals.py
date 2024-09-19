@@ -18,7 +18,7 @@ import time
 @receiver(post_save, sender = User)
 def create(sender, instance, created, **kwargs):
     if created:
-        print("Signal: Creating Profile")
+        print("Signal: Creating data")
         Data.objects.create(user = instance, background = "This is it")
         
 

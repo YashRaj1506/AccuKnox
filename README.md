@@ -25,7 +25,8 @@ Answer 3)
 Yes, By default do django signals run in the same database transaction as the caller.
 
 below is the signals.py
-![image](https://github.com/user-attachments/assets/a2bbe50d-447a-43e3-9210-1cae9ed49272)
+![image](https://github.com/user-attachments/assets/97e8bc49-2e5e-4d58-b4bf-bbbce1ac8714)
+
 
 below is the models.py
 
@@ -33,7 +34,8 @@ below is the models.py
 
 
 below is the proof of it.
-![image](https://github.com/user-attachments/assets/d3cbcd6c-0845-46ba-921e-531cec8b8760)
+![image](https://github.com/user-attachments/assets/9a2d1281-0adb-42da-9c4a-2fc77ff72711)
+
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
